@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int reverse(int x){
+	int y=0,m;
+	while(x){
+		m=x%10;
+		y=y*10+m;
+		x=x/10;
+	}
+	return y;
+}
+int main(){
+	int x;
+	cin>>x;
+	cout<<reverse(x);
+} //改善：需要考虑数据类型范围 
