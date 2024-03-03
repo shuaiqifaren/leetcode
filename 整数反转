@@ -7,6 +7,8 @@ int reverse(int x){
 		y=y*10+m;
 		x=x/10;
 	}
+	if(y<int_min||y>int_max)
+		return 0;
 	return y;
 }
 int main(){
